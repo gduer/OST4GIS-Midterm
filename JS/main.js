@@ -1,8 +1,5 @@
-/* =====================
-Leaflet Configuration
-===================== */
-locations = "https://raw.githubusercontent.com/gduer/JS-Midterm/master/locations.json?token=AduVdlMfywykjLA0-Iy8LhosRpr63Q2pks5avulrwA%3D%3D";
-political = "https://raw.githubusercontent.com/gduer/JS-Midterm/master/political.json?token=AduVdvIwEaonAvWlKH5EwKfNR2NUblQcks5axp15wA%3D%3D";
+locations = "https://raw.githubusercontent.com/gduer/CPLN692-Midterm/master/Data/locations.json";
+political = "https://raw.githubusercontent.com/gduer/CPLN692-Midterm/master/Data/political.json";
 
 var frame = 0;
 var DaniMarker;
@@ -218,8 +215,6 @@ function onEachFeature(feature, layer) {
       $( "#image" ).empty();
       $("#image").append('<img id="image" src="Images/' + layer.feature.properties.ClaimedBy + '.jpg"/>');
       console.log(layer.feature.properties.name);
-      // You can make your ajax call declaration here
-      //$.ajax(...
     });
 }
 
